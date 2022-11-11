@@ -28,10 +28,7 @@ metadata<-read.csv(file="./41586_2018_654_MOESM3_ESM/Supplementary_Table_10_Full
 
 #order data
 DataOrdered<-data[,metadata[,1]]
-#Checkpoint
-numero<-5666
-metadata[numero,1]
-colnames(DataOrdered)[numero]
+
 #Save data
 save(DataOrdered,metadata,file = "ALM_VISp_data.RData")
 
